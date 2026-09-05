@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KhanSpeedrun | ฐานข้อมูลไอเทม & มอนสเตอร์ดรอป</title>
+<meta name="description" content="ค้นหาชุดเซตและอาวุธ พร้อมมอนสเตอร์ดรอปและค่าสเตตัสครบทุกอาชีพ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="app">
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#/" class="brand">
+        <span class="brand-mark">餐</span>
+        <span class="brand-text">
+          <span class="brand-title">KhanSpeedrun</span>
+          <span class="brand-sub">ฐานข้อมูลไอเทม</span>
+        </span>
+      </a>
+
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="searchInput" type="text" placeholder="ค้นหาชื่อไอเทม หรือมอนสเตอร์...">
+        <button id="searchClear" class="search-clear" aria-label="ล้างคำค้นหา" hidden>&times;</button>
+      </div>
+
+      <nav class="mode-toggle" id="modeToggle">
+        <button data-mode="armor" class="mode-btn is-active">ชุดอาชีพ</button>
+        <button data-mode="weapon" class="mode-btn">อาวุธ</button>
+        <button data-mode="skill" class="mode-btn">สกิล</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="searchResults" class="search-results" hidden></div>
+
+  <main class="layout">
+    <aside class="rail" id="rail"></aside>
+
+    <section class="content">
+      <div class="content-head">
+        <h1 id="contentTitle">เลือกอาชีพ</h1>
+        <div class="cat-tabs" id="catTabs"></div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="empty-note" id="emptyNote" hidden>ไม่พบไอเทมในหมวดนี้</p>
+    </section>
+  </main>
+
+  <div class="detail-overlay" id="detailOverlay">
+    <div class="detail-panel" id="detailPanel" role="dialog" aria-modal="true"></div>
+  </div>
+
+  <footer class="site-footer">
+    สร้างจากข้อมูลไอเทมทั้งหมด &middot; ข้อมูลอ้างอิงจากอิน-เกม อาจคลาดเคลื่อนได้ หากพบข้อผิดพลาดแจ้งแอดมินได้เลย
+  </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
