@@ -34,6 +34,7 @@
         <button data-mode="armor" class="mode-btn is-active">ชุดอาชีพ</button>
         <button data-mode="weapon" class="mode-btn">อาวุธ</button>
         <button data-mode="skill" class="mode-btn">สกิล</button>
+        <button data-mode="map" class="mode-btn">แผนที่ & มอนสเตอร์</button>
       </nav>
     </div>
   </header>
@@ -48,6 +49,7 @@
         <h1 id="contentTitle">เลือกอาชีพ</h1>
         <div class="cat-tabs" id="catTabs"></div>
       </div>
+      <div class="map-hero" id="mapHero" hidden></div>
       <div class="grid" id="grid"></div>
       <p class="empty-note" id="emptyNote" hidden>ไม่พบไอเทมในหมวดนี้</p>
     </section>
@@ -57,11 +59,20 @@
     <div class="detail-panel" id="detailPanel" role="dialog" aria-modal="true"></div>
   </div>
 
+  <div class="detail-overlay monster-overlay" id="monsterOverlay">
+    <div class="detail-panel" id="monsterPanel" role="dialog" aria-modal="true"></div>
+  </div>
+
   <footer class="site-footer">
     สร้างจากข้อมูลไอเทมทั้งหมด &middot; ข้อมูลอ้างอิงจากอิน-เกม อาจคลาดเคลื่อนได้ หากพบข้อผิดพลาดแจ้งแอดมินได้เลย
   </footer>
 </div>
 
+<script src="modules/shared.js"></script>
+<script src="modules/armor.js"></script>
+<script src="modules/weapon.js"></script>
+<script src="modules/skill.js"></script>
+<script src="modules/mapmonster.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

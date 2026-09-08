@@ -1,0 +1,779 @@
+{
+  "order": [
+    "kharakorum",
+    "wroclaw-fortress",
+    "boggy-dungeon",
+    "iceboggy-dungeon",
+    "lublin-mongol-fortess",
+    "iron-dungeon",
+    "lava-canyon",
+    "mist-iron-prison",
+    "mist-ancient-ruin",
+    "altai-gorge",
+    "hangzhou",
+    "lost-dungeon-of-siberia-sib1",
+    "lost-dungeon-of-siberia-sib2",
+    "waste-land-of-siberia-sib3"
+  ],
+  "maps": {
+    "kharakorum": {
+      "name": "Kharakorum",
+      "mapImage": "img/maps/kharakorum/map.png",
+      "monsters": [
+        {
+          "id": "grey-wolf",
+          "name": "Grey Wolf",
+          "image": "img/maps/kharakorum/grey-wolf.png"
+        },
+        {
+          "id": "rabid-wolf",
+          "name": "Rabid Wolf",
+          "image": "img/maps/kharakorum/rabid-wolf.png"
+        },
+        {
+          "id": "zombie",
+          "name": "Zombie",
+          "image": "img/maps/kharakorum/zombie.png"
+        },
+        {
+          "id": "desert-swordsman",
+          "name": "Desert Swordsman",
+          "image": "img/maps/kharakorum/desert-swordsman.png"
+        },
+        {
+          "id": "desert-archer",
+          "name": "Desert Archer",
+          "image": "img/maps/kharakorum/desert-archer.png"
+        },
+        {
+          "id": "desert-spear",
+          "name": "Desert Spear",
+          "image": "img/maps/kharakorum/desert-spear.png"
+        },
+        {
+          "id": "harbuan-warrior",
+          "name": "Harbuan Warrior",
+          "image": "img/maps/kharakorum/harbuan-warrior.png"
+        },
+        {
+          "id": "harbuan-sorcerer",
+          "name": "Harbuan Sorcerer",
+          "image": "img/maps/kharakorum/harbuan-sorcerer.png"
+        },
+        {
+          "id": "harbuan-senior",
+          "name": "Harbuan Senior",
+          "image": "img/maps/kharakorum/harbuan-senior.png"
+        },
+        {
+          "id": "harbuan-chief",
+          "name": "Harbuan Chief",
+          "image": "img/maps/kharakorum/harbuan-chief.png"
+        },
+        {
+          "id": "solitude-bee",
+          "name": "Solitude Bee",
+          "image": "img/maps/kharakorum/solitude-bee.png"
+        },
+        {
+          "id": "solitude-bee1",
+          "name": "Solitude Bee1",
+          "image": "img/maps/kharakorum/solitude-bee1.png"
+        },
+        {
+          "id": "solitude-bee2",
+          "name": "Solitude Bee2",
+          "image": "img/maps/kharakorum/solitude-bee2.png"
+        },
+        {
+          "id": "beehive-lord",
+          "name": "Beehive Lord",
+          "image": "img/maps/kharakorum/beehive-lord.png"
+        },
+        {
+          "id": "beehive-lord1",
+          "name": "Beehive Lord1",
+          "image": "img/maps/kharakorum/beehive-lord1.png"
+        },
+        {
+          "id": "forest-giant",
+          "name": "Forest Giant",
+          "image": "img/maps/kharakorum/forest-giant.png"
+        },
+        {
+          "id": "bisasa-guisanso",
+          "name": "Bisasa Guisanso",
+          "image": "img/maps/kharakorum/bisasa-guisanso.png"
+        }
+      ]
+    },
+    "wroclaw-fortress": {
+      "name": "Wroclaw Fortress",
+      "mapImage": "img/maps/wroclaw-fortress/map.png",
+      "monsters": [
+        {
+          "id": "lizardman",
+          "name": "Lizardman",
+          "image": "img/maps/wroclaw-fortress/lizardman.png"
+        },
+        {
+          "id": "bandit-warrior",
+          "name": "Bandit Warrior",
+          "image": "img/maps/wroclaw-fortress/bandit-warrior.png"
+        },
+        {
+          "id": "titan",
+          "name": "Titan",
+          "image": "img/maps/wroclaw-fortress/titan.png"
+        },
+        {
+          "id": "cave-man",
+          "name": "Cave Man",
+          "image": "img/maps/wroclaw-fortress/cave-man.png"
+        },
+        {
+          "id": "ettin",
+          "name": "Ettin",
+          "image": "img/maps/wroclaw-fortress/ettin.png"
+        },
+        {
+          "id": "valkyrie",
+          "name": "Valkyrie",
+          "image": "img/maps/wroclaw-fortress/valkyrie.png"
+        },
+        {
+          "id": "ghast",
+          "name": "Ghast",
+          "image": "img/maps/wroclaw-fortress/ghast.png"
+        },
+        {
+          "id": "skeleton-soldier",
+          "name": "Skeleton Soldier",
+          "image": "img/maps/wroclaw-fortress/skeleton-soldier.png"
+        },
+        {
+          "id": "skeleton-archer",
+          "name": "Skeleton Archer",
+          "image": "img/maps/wroclaw-fortress/skeleton-archer.png"
+        },
+        {
+          "id": "caron",
+          "name": "Caron",
+          "image": "img/maps/wroclaw-fortress/caron.png"
+        },
+        {
+          "id": "broo",
+          "name": "Broo",
+          "image": "img/maps/wroclaw-fortress/broo.png"
+        },
+        {
+          "id": "bug-bear",
+          "name": "Bug Bear",
+          "image": "img/maps/wroclaw-fortress/bug-bear.png"
+        },
+        {
+          "id": "cursed-ettin",
+          "name": "Cursed Ettin",
+          "image": "img/maps/wroclaw-fortress/cursed-ettin.png"
+        },
+        {
+          "id": "ghast-king",
+          "name": "Ghast King",
+          "image": "img/maps/wroclaw-fortress/ghast-king.png"
+        }
+      ]
+    },
+    "boggy-dungeon": {
+      "name": "Boggy Dungeon",
+      "mapImage": "img/maps/boggy-dungeon/map.png",
+      "monsters": [
+        {
+          "id": "vampire-bat",
+          "name": "Vampire Bat",
+          "image": "img/maps/boggy-dungeon/vampire-bat.png"
+        },
+        {
+          "id": "broken-gargoyle",
+          "name": "Broken Gargoyle",
+          "image": "img/maps/boggy-dungeon/broken-gargoyle.png"
+        },
+        {
+          "id": "goblin",
+          "name": "Goblin",
+          "image": "img/maps/boggy-dungeon/goblin.png"
+        },
+        {
+          "id": "kobold",
+          "name": "Kobold",
+          "image": "img/maps/boggy-dungeon/kobold.png"
+        },
+        {
+          "id": "kobold-archer",
+          "name": "Kobold Archer",
+          "image": "img/maps/boggy-dungeon/kobold-archer.png"
+        },
+        {
+          "id": "mud-golem",
+          "name": "Mud Golem",
+          "image": "img/maps/boggy-dungeon/mud-golem.png"
+        },
+        {
+          "id": "cryptile",
+          "name": "Cryptile",
+          "image": "img/maps/boggy-dungeon/cryptile.png"
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "image": "img/maps/boggy-dungeon/python.png"
+        },
+        {
+          "id": "stone-golem",
+          "name": "Stone Golem",
+          "image": "img/maps/boggy-dungeon/stone-golem.png"
+        },
+        {
+          "id": "cave-giant",
+          "name": "Cave Giant",
+          "image": "img/maps/boggy-dungeon/cave-giant.png"
+        },
+        {
+          "id": "cryptile-king",
+          "name": "Cryptile King",
+          "image": "img/maps/boggy-dungeon/cryptile-king.png"
+        }
+      ]
+    },
+    "iceboggy-dungeon": {
+      "name": "IceBoggy Dungeon",
+      "mapImage": "img/maps/iceboggy-dungeon/map.png",
+      "monsters": [
+        {
+          "id": "snow-salamander",
+          "name": "Snow Salamander",
+          "image": "img/maps/iceboggy-dungeon/snow-salamander.png"
+        },
+        {
+          "id": "ice-snake",
+          "name": "Ice Snake",
+          "image": "img/maps/iceboggy-dungeon/ice-snake.png"
+        },
+        {
+          "id": "frozen-golem",
+          "name": "Frozen Golem",
+          "image": "img/maps/iceboggy-dungeon/frozen-golem.png"
+        },
+        {
+          "id": "burning-golem",
+          "name": "Burning Golem",
+          "image": "img/maps/iceboggy-dungeon/burning-golem.png"
+        },
+        {
+          "id": "white-axe-titan",
+          "name": "White Axe Titan",
+          "image": "img/maps/iceboggy-dungeon/white-axe-titan.png"
+        }
+      ]
+    },
+    "lublin-mongol-fortess": {
+      "name": "Lublin Mongol Fortess",
+      "mapImage": "img/maps/lublin-mongol-fortess/map.png",
+      "monsters": [
+        {
+          "id": "lycan",
+          "name": "Lycan",
+          "image": "img/maps/lublin-mongol-fortess/lycan.png"
+        },
+        {
+          "id": "lycan-archer",
+          "name": "Lycan Archer",
+          "image": "img/maps/lublin-mongol-fortess/lycan-archer.png"
+        },
+        {
+          "id": "dire-bear",
+          "name": "Dire Bear",
+          "image": "img/maps/lublin-mongol-fortess/dire-bear.png"
+        },
+        {
+          "id": "griffon",
+          "name": "Griffon",
+          "image": "img/maps/lublin-mongol-fortess/griffon.png"
+        },
+        {
+          "id": "frost-salamander",
+          "name": "Frost Salamander",
+          "image": "img/maps/lublin-mongol-fortess/frost-salamander.png"
+        },
+        {
+          "id": "death-bringer",
+          "name": "Death Bringer",
+          "image": "img/maps/lublin-mongol-fortess/death-bringer.png"
+        },
+        {
+          "id": "e-wars",
+          "name": "E-Wars",
+          "image": "img/maps/lublin-mongol-fortess/e-wars.png"
+        },
+        {
+          "id": "minotaur",
+          "name": "Minotaur",
+          "image": "img/maps/lublin-mongol-fortess/minotaur.png"
+        },
+        {
+          "id": "frost-worm",
+          "name": "Frost Worm",
+          "image": "img/maps/lublin-mongol-fortess/frost-worm.png"
+        },
+        {
+          "id": "ice-golem",
+          "name": "Ice Golem",
+          "image": "img/maps/lublin-mongol-fortess/ice-golem.png"
+        },
+        {
+          "id": "bone-e-wars",
+          "name": "Bone E-Wars",
+          "image": "img/maps/lublin-mongol-fortess/bone-e-wars.png"
+        },
+        {
+          "id": "white-dragon",
+          "name": "White Dragon",
+          "image": "img/maps/lublin-mongol-fortess/white-dragon.png"
+        },
+        {
+          "id": "mountain-ice-golem",
+          "name": "Mountain Ice Golem",
+          "image": "img/maps/lublin-mongol-fortess/mountain-ice-golem.png"
+        },
+        {
+          "id": "white-dragon-king",
+          "name": "White Dragon King",
+          "image": "img/maps/lublin-mongol-fortess/white-dragon-king.png"
+        }
+      ]
+    },
+    "iron-dungeon": {
+      "name": "Iron Dungeon",
+      "mapImage": "img/maps/iron-dungeon/map.png",
+      "monsters": [
+        {
+          "id": "black-beetle",
+          "name": "Black Beetle",
+          "image": "img/maps/iron-dungeon/black-beetle.png"
+        },
+        {
+          "id": "wraith",
+          "name": "Wraith",
+          "image": "img/maps/iron-dungeon/wraith.png"
+        },
+        {
+          "id": "giant-bat",
+          "name": "Giant Bat",
+          "image": "img/maps/iron-dungeon/giant-bat.png"
+        },
+        {
+          "id": "gargoyle",
+          "name": "Gargoyle",
+          "image": "img/maps/iron-dungeon/gargoyle.png"
+        },
+        {
+          "id": "gas-lion",
+          "name": "Gas Lion",
+          "image": "img/maps/iron-dungeon/gas-lion.png"
+        },
+        {
+          "id": "black-phantom",
+          "name": "Black Phantom",
+          "image": "img/maps/iron-dungeon/black-phantom.png"
+        },
+        {
+          "id": "troll",
+          "name": "Troll",
+          "image": "img/maps/iron-dungeon/troll.png"
+        },
+        {
+          "id": "green-dragon",
+          "name": "Green Dragon",
+          "image": "img/maps/iron-dungeon/green-dragon.png"
+        },
+        {
+          "id": "phantom-of-the-phantom",
+          "name": "Phantom of the Phantom",
+          "image": "img/maps/iron-dungeon/phantom-of-the-phantom.png"
+        },
+        {
+          "id": "green-dragon-king",
+          "name": "Green Dragon King",
+          "image": "img/maps/iron-dungeon/green-dragon-king.png"
+        }
+      ]
+    },
+    "lava-canyon": {
+      "name": "Lava Canyon",
+      "mapImage": "img/maps/lava-canyon/map.png",
+      "monsters": [
+        {
+          "id": "skeleton-warrior",
+          "name": "Skeleton Warrior",
+          "image": "img/maps/lava-canyon/skeleton-warrior.png"
+        },
+        {
+          "id": "peryton",
+          "name": "Peryton",
+          "image": "img/maps/lava-canyon/peryton.png"
+        },
+        {
+          "id": "giant-scorpion",
+          "name": "Giant Scorpion",
+          "image": "img/maps/lava-canyon/giant-scorpion.png"
+        },
+        {
+          "id": "myconid",
+          "name": "Myconid",
+          "image": "img/maps/lava-canyon/myconid.png"
+        },
+        {
+          "id": "berserk-zapher",
+          "name": "Berserk Zapher",
+          "image": "img/maps/lava-canyon/berserk-zapher.png"
+        },
+        {
+          "id": "poison-myconid",
+          "name": "Poison Myconid",
+          "image": "img/maps/lava-canyon/poison-myconid.png"
+        },
+        {
+          "id": "scorpion-king",
+          "name": "Scorpion King",
+          "image": "img/maps/lava-canyon/scorpion-king.png"
+        }
+      ]
+    },
+    "mist-iron-prison": {
+      "name": "Mist Iron Prison",
+      "mapImage": "img/maps/mist-iron-prison/map.png",
+      "monsters": [
+        {
+          "id": "hobgoblin",
+          "name": "Hobgoblin",
+          "image": "img/maps/mist-iron-prison/hobgoblin.png"
+        },
+        {
+          "id": "gray-lynch",
+          "name": "Gray Lynch",
+          "image": "img/maps/mist-iron-prison/gray-lynch.png"
+        },
+        {
+          "id": "blue-phantom",
+          "name": "Blue Phantom",
+          "image": "img/maps/mist-iron-prison/blue-phantom.png"
+        },
+        {
+          "id": "evil-troll",
+          "name": "Evil Troll",
+          "image": "img/maps/mist-iron-prison/evil-troll.png"
+        },
+        {
+          "id": "dark-sage",
+          "name": "Dark Sage",
+          "image": "img/maps/mist-iron-prison/dark-sage.png"
+        },
+        {
+          "id": "gray-lynch-king",
+          "name": "Gray Lynch King",
+          "image": "img/maps/mist-iron-prison/gray-lynch-king.png"
+        }
+      ]
+    },
+    "mist-ancient-ruin": {
+      "name": "Mist Ancient Ruin",
+      "mapImage": "img/maps/mist-ancient-ruin/map.png",
+      "monsters": [
+        {
+          "id": "living-statue-warrior",
+          "name": "Living Statue Warrior",
+          "image": "img/maps/mist-ancient-ruin/living-statue-warrior.png"
+        },
+        {
+          "id": "living-statue-wizard",
+          "name": "Living Statue Wizard",
+          "image": "img/maps/mist-ancient-ruin/living-statue-wizard.png"
+        },
+        {
+          "id": "will-o-wisp",
+          "name": "Will-O-Wisp",
+          "image": "img/maps/mist-ancient-ruin/will-o-wisp.png"
+        },
+        {
+          "id": "red-gas-lion",
+          "name": "Red Gas Lion",
+          "image": "img/maps/mist-ancient-ruin/red-gas-lion.png"
+        },
+        {
+          "id": "red-dragon",
+          "name": "Red Dragon",
+          "image": "img/maps/mist-ancient-ruin/red-dragon.png"
+        },
+        {
+          "id": "will-o-wisp-king",
+          "name": "Will-O-Wisp King",
+          "image": "img/maps/mist-ancient-ruin/will-o-wisp-king.png"
+        }
+      ]
+    },
+    "altai-gorge": {
+      "name": "Altai Gorge",
+      "mapImage": "img/maps/altai-gorge/map.png",
+      "monsters": [
+        {
+          "id": "ancient-death-bringer",
+          "name": "Ancient Death Bringer",
+          "image": null
+        },
+        {
+          "id": "deformed-wolf",
+          "name": "Deformed Wolf",
+          "image": null
+        },
+        {
+          "id": "mongol-desert-swordsman",
+          "name": "Mongol Desert Swordsman",
+          "image": null
+        },
+        {
+          "id": "mongol-desert-archer",
+          "name": "Mongol Desert Archer",
+          "image": null
+        },
+        {
+          "id": "mongol-desert-spear",
+          "name": "Mongol Desert Spear",
+          "image": null
+        },
+        {
+          "id": "frost-death-bringer",
+          "name": "Frost Death Bringer",
+          "image": null
+        },
+        {
+          "id": "boggle",
+          "name": "Boggle",
+          "image": null
+        }
+      ]
+    },
+    "hangzhou": {
+      "name": "HangZhou",
+      "mapImage": "img/maps/hangzhou/map.png",
+      "monsters": [
+        {
+          "id": "ko",
+          "name": "Ko",
+          "image": "img/maps/hangzhou/ko.png"
+        },
+        {
+          "id": "gold-lion",
+          "name": "Gold Lion",
+          "image": "img/maps/hangzhou/gold-lion.png"
+        },
+        {
+          "id": "rksasa",
+          "name": "Rksasa",
+          "image": "img/maps/hangzhou/rksasa.png"
+        },
+        {
+          "id": "imp",
+          "name": "Imp",
+          "image": "img/maps/hangzhou/imp.png"
+        },
+        {
+          "id": "yellow-tail",
+          "name": "Yellow Tail",
+          "image": "img/maps/hangzhou/yellow-tail.png"
+        },
+        {
+          "id": "king-minotaur",
+          "name": "King Minotaur",
+          "image": "img/maps/hangzhou/king-minotaur.png"
+        },
+        {
+          "id": "honghaea",
+          "name": "HongHaeA",
+          "image": "img/maps/hangzhou/honghaea.png"
+        },
+        {
+          "id": "bronze-lion",
+          "name": "Bronze Lion",
+          "image": "img/maps/hangzhou/bronze-lion.png"
+        },
+        {
+          "id": "thunderer",
+          "name": "Thunderer",
+          "image": "img/maps/hangzhou/thunderer.png"
+        },
+        {
+          "id": "poison-toad",
+          "name": "Poison Toad",
+          "image": "img/maps/hangzhou/poison-toad.png"
+        },
+        {
+          "id": "chinese-ghost",
+          "name": "Chinese Ghost",
+          "image": "img/maps/hangzhou/chinese-ghost.png"
+        },
+        {
+          "id": "soul-taoist",
+          "name": "Soul Taoist",
+          "image": "img/maps/hangzhou/soul-taoist.png"
+        },
+        {
+          "id": "gold-lion-king",
+          "name": "Gold Lion King",
+          "image": "img/maps/hangzhou/gold-lion-king.png"
+        }
+      ]
+    },
+    "lost-dungeon-of-siberia-sib1": {
+      "name": "Lost Dungeon of Siberia (SIB1)",
+      "mapImage": "img/maps/lost-dungeon-of-siberia-sib1/map.png",
+      "monsters": [
+        {
+          "id": "mutant-bat",
+          "name": "Mutant Bat",
+          "image": "img/maps/lost-dungeon-of-siberia-sib1/mutant-bat.png"
+        },
+        {
+          "id": "blood-wolf",
+          "name": "Blood Wolf",
+          "image": "img/maps/lost-dungeon-of-siberia-sib1/blood-wolf.png"
+        },
+        {
+          "id": "armored-boggle",
+          "name": "Armored Boggle",
+          "image": "img/maps/lost-dungeon-of-siberia-sib1/armored-boggle.png"
+        },
+        {
+          "id": "frozen-e-wars",
+          "name": "Frozen E-Wars",
+          "image": "img/maps/lost-dungeon-of-siberia-sib1/frozen-e-wars.png"
+        },
+        {
+          "id": "bigfoot",
+          "name": "Bigfoot",
+          "image": "img/maps/lost-dungeon-of-siberia-sib1/bigfoot.png"
+        },
+        {
+          "id": "armored-minotaur",
+          "name": "Armored Minotaur",
+          "image": "img/maps/lost-dungeon-of-siberia-sib1/armored-minotaur.png"
+        },
+        {
+          "id": "ice-flower",
+          "name": "Ice Flower",
+          "image": "img/maps/lost-dungeon-of-siberia-sib1/ice-flower.png"
+        },
+        {
+          "id": "demon",
+          "name": "Demon",
+          "image": "img/maps/lost-dungeon-of-siberia-sib1/demon.png"
+        }
+      ]
+    },
+    "lost-dungeon-of-siberia-sib2": {
+      "name": "Lost Dungeon of Siberia (SIB2)",
+      "mapImage": "img/maps/lost-dungeon-of-siberia-sib2/map.png",
+      "monsters": [
+        {
+          "id": "mutant-bat",
+          "name": "Mutant Bat",
+          "image": "img/maps/lost-dungeon-of-siberia-sib2/mutant-bat.png"
+        },
+        {
+          "id": "armored-minotaur",
+          "name": "Armored Minotaur",
+          "image": "img/maps/lost-dungeon-of-siberia-sib2/barmored-minotaur.png"
+        },
+        {
+          "id": "demon",
+          "name": "Demon",
+          "image": "img/maps/lost-dungeon-of-siberia-sib2/demon.png"
+        },
+        {
+          "id": "white-gas-lion",
+          "name": "White Gas Lion",
+          "image": "img/maps/lost-dungeon-of-siberia-sib2/white-gas-lion.png"
+        },
+        {
+          "id": "frost-peryton",
+          "name": "Frost Peryton",
+          "image": "img/maps/lost-dungeon-of-siberia-sib2/frost-peryton.png"
+        },
+        {
+          "id": "white-berserk-zapher",
+          "name": "White Berserk Zapher",
+          "image": "img/maps/lost-dungeon-of-siberia-sib2/white-berserk-zapher.png"
+        },
+        {
+          "id": "talos",
+          "name": "Talos",
+          "image": "img/maps/lost-dungeon-of-siberia-sib2/talos.png"
+        },
+        {
+          "id": "ice-flower",
+          "name": "Ice Flower",
+          "image": "img/maps/lost-dungeon-of-siberia-sib2/ice-flower.png"
+        }
+      ]
+    },
+    "waste-land-of-siberia-sib3": {
+      "name": "Waste Land of Siberia (SIB3)",
+      "mapImage": "img/maps/waste-land-of-siberia-sib3/map.png",
+      "monsters": [
+        {
+          "id": "yeti",
+          "name": "Yeti",
+          "image": "img/maps/waste-land-of-siberia-sib3/yeti.png"
+        },
+        {
+          "id": "crimson-scorpion",
+          "name": "Crimson Scorpion",
+          "image": "img/maps/waste-land-of-siberia-sib3/crimson-scorpion.png"
+        },
+        {
+          "id": "white-lynch",
+          "name": "White Lynch",
+          "image": "img/maps/waste-land-of-siberia-sib3/white-lynch.png"
+        },
+        {
+          "id": "enraged-yeti",
+          "name": "Enraged Yeti",
+          "image": "img/maps/waste-land-of-siberia-sib3/enraged-yeti.png"
+        },
+        {
+          "id": "ice-warrior",
+          "name": "Ice Warrior",
+          "image": "img/maps/waste-land-of-siberia-sib3/ice-warrior.png"
+        },
+        {
+          "id": "ice-wizard",
+          "name": "Ice Wizard",
+          "image": "img/maps/waste-land-of-siberia-sib3/ice-wizard.png"
+        },
+        {
+          "id": "ice-flower",
+          "name": "Ice Flower",
+          "image": "img/maps/waste-land-of-siberia-sib3/ice-flower.png"
+        },
+        {
+          "id": "cristal-banshee",
+          "name": "Cristal Banshee",
+          "image": "img/maps/waste-land-of-siberia-sib3/cristal-banshee.png"
+        },
+        {
+          "id": "nightshade",
+          "name": "Nightshade",
+          "image": "img/maps/waste-land-of-siberia-sib3/nightshade.png"
+        }
+      ]
+    }
+  }
+}

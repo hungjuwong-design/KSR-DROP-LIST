@@ -79,7 +79,7 @@ button{font-family:inherit; cursor:pointer}
 .search-clear:hover{color:var(--text)}
 
 .mode-toggle{
-  display:flex; gap:4px; background:var(--bg-raised); border:1px solid var(--line);
+  display:flex; flex-wrap:wrap; gap:4px; background:var(--bg-raised); border:1px solid var(--line);
   border-radius:8px; padding:3px; flex-shrink:0;
 }
 .mode-btn{
@@ -193,9 +193,16 @@ button{font-family:inherit; cursor:pointer}
 .detail-titles{flex:1; min-width:0}
 .detail-titles h2{font-family:'Cinzel',serif; font-size:19px; margin:0 0 6px; color:var(--gold-bright)}
 .detail-badges{display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px}
+.detail-popup-actions{display:flex; gap:8px; flex-shrink:0; align-self:flex-start}
+.detail-back{
+  background:var(--bg-card); border:1px solid var(--line-soft); color:var(--text-dim);
+  height:32px; padding:0 12px; border-radius:8px; font-size:12.5px; font-weight:600;
+  white-space:nowrap;
+}
+.detail-back:hover{color:var(--gold-bright); border-color:var(--gold)}
 .detail-close{
   background:var(--bg-card); border:1px solid var(--line-soft); color:var(--text-dim);
-  width:32px; height:32px; border-radius:8px; font-size:18px; flex-shrink:0; align-self:flex-start;
+  width:32px; height:32px; border-radius:8px; font-size:18px; flex-shrink:0;
 }
 .detail-close:hover{color:var(--text); border-color:var(--gold)}
 .detail-actions{display:flex; gap:8px; margin-top:10px}
@@ -211,8 +218,59 @@ button{font-family:inherit; cursor:pointer}
 .monster-tag{
   font-size:12px; background:var(--bg-card); border:1px solid var(--line-soft);
   padding:4px 10px; border-radius:20px; color:var(--text-dim);
+  cursor:pointer;
 }
+.monster-tag:hover{border-color:var(--gold); color:var(--gold-bright)}
 .monster-none{color:var(--text-faint); font-size:13px}
+
+/* ---------- Map & Monster ---------- */
+.card-btn{background:var(--bg-card); text-align:left; border:1px solid var(--line-soft); width:100%}
+.mm-frame{position:relative}
+.mm-placeholder{
+  display:flex; align-items:center; justify-content:center; width:100%; height:100%;
+  font-family:'Cinzel', serif; font-size:28px; font-weight:700;
+  color:var(--text-faint); opacity:.5;
+}
+.mm-placeholder--lg{font-size:48px}
+
+/* Monster grid inside a selected map: every frame is the exact same
+   fixed pixel size regardless of the source image's own dimensions. */
+.mm-monster-grid{grid-template-columns:repeat(auto-fill, minmax(140px,1fr))}
+.mm-monster-grid .card-img{
+  width:110px; height:110px; aspect-ratio:unset; margin:0 auto;
+}
+.mm-monster-grid .card-img img{width:80px; height:80px; object-fit:contain}
+.mm-monster-grid .card-name{text-align:center}
+
+/* Big map image shown at the top-center once a specific map is open */
+.map-hero{display:flex; flex-direction:column; align-items:center; gap:10px; margin-bottom:20px}
+.map-hero-frame{
+  width:100%; max-width:520px; aspect-ratio:16/9;
+  background:radial-gradient(circle at 50% 40%, #2a2119, #17130e);
+  border:1px solid var(--line-soft); border-radius:12px; overflow:hidden;
+  display:flex; align-items:center; justify-content:center;
+}
+.map-hero-frame img{width:100%; height:100%; object-fit:cover}
+.map-hero-name{
+  font-family:'Cinzel', serif; font-size:15px; font-weight:600;
+  color:var(--gold-bright); letter-spacing:.02em;
+}
+
+.mm-drop-grid{
+  display:grid; grid-template-columns:repeat(auto-fill, minmax(120px,1fr));
+  gap:10px;
+}
+.mm-drop-item{
+  display:flex; flex-direction:column; gap:6px; background:var(--bg-card);
+  border:1px solid var(--line-soft); border-radius:8px; padding:8px;
+  transition:border-color .15s; text-align:left; cursor:pointer; font:inherit; color:inherit;
+}
+.mm-drop-item:hover{border-color:var(--gold)}
+.mm-drop-name{font-size:12px; font-weight:600; line-height:1.25}
+.mm-drop-meta{font-size:10.5px; color:var(--text-faint)}
+
+/* Monster popup stacks above the item detail overlay */
+.monster-overlay{z-index:70}
 
 .stat-table-wrap{overflow-x:auto; border:1px solid var(--line-soft); border-radius:8px}
 table.stat-table{width:100%; border-collapse:collapse; font-size:12.5px; white-space:nowrap}
