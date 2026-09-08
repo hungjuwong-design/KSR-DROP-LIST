@@ -527,37 +527,37 @@
         {
           "id": "ancient-death-bringer",
           "name": "Ancient Death Bringer",
-          "image": null
+          "image": "img/maps/altai-gorge/ancient-death-bringer.png"
         },
         {
           "id": "deformed-wolf",
           "name": "Deformed Wolf",
-          "image": null
+          "image": "img/maps/altai-gorge/deformed-wolf.png"
         },
         {
           "id": "mongol-desert-swordsman",
           "name": "Mongol Desert Swordsman",
-          "image": null
+          "image": "img/maps/altai-gorge/mongol-desert-swordsman.png"
         },
         {
           "id": "mongol-desert-archer",
           "name": "Mongol Desert Archer",
-          "image": null
+          "image": "img/maps/altai-gorge/mongol-desert-archer.png"
         },
         {
           "id": "mongol-desert-spear",
           "name": "Mongol Desert Spear",
-          "image": null
+          "image": "img/maps/altai-gorge/mongol-desert-spear.png"
         },
         {
           "id": "frost-death-bringer",
           "name": "Frost Death Bringer",
-          "image": null
+          "image": "img/maps/altai-gorge/frost-death-bringer.png"
         },
         {
           "id": "boggle",
           "name": "Boggle",
-          "image": null
+          "image": "img/maps/altai-gorge/boggle.png"
         }
       ]
     },
