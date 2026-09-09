@@ -30,7 +30,7 @@ body{
   min-height: 100vh;
 }
 a{color:inherit; text-decoration:none}
-button{font-family:inherit; cursor:pointer}
+button{font-family:inherit; cursor:pointer; color:inherit}
 ::selection{background: var(--gold); color:#14100c}
 
 .eng{font-family:'Cinzel', 'Noto Sans Thai', serif}
@@ -161,7 +161,7 @@ button{font-family:inherit; cursor:pointer}
   border:1px solid var(--line-soft);
 }
 .card-img img{width:70%; height:70%; object-fit:contain; image-rendering:pixelated}
-.card-name{font-size:13.5px; font-weight:600; line-height:1.3}
+.card-name{font-size:13.5px; font-weight:600; line-height:1.3; color:var(--text)}
 .card-meta{display:flex; justify-content:space-between; align-items:center; font-size:11.5px; color:var(--text-faint)}
 .chip{
   font-size:10.5px; font-weight:700; padding:2px 7px; border-radius:20px;
@@ -235,22 +235,24 @@ button{font-family:inherit; cursor:pointer}
 
 /* Monster grid inside a selected map: every frame is the exact same
    fixed pixel size regardless of the source image's own dimensions. */
-.mm-monster-grid{grid-template-columns:repeat(auto-fill, minmax(140px,1fr))}
+.mm-monster-grid{grid-template-columns:repeat(auto-fill, minmax(170px,1fr))}
 .mm-monster-grid .card-img{
-  width:110px; height:110px; aspect-ratio:unset; margin:0 auto;
+  width:150px; height:150px; aspect-ratio:unset; margin:0 auto;
 }
-.mm-monster-grid .card-img img{width:80px; height:80px; object-fit:contain}
+.mm-monster-grid .card-img img{width:118px; height:118px; object-fit:contain}
 .mm-monster-grid .card-name{text-align:center}
 
-/* Big map image shown at the top-center once a specific map is open */
+/* Big map image shown at the top-center once a specific map is open.
+   Height follows the image's own ratio (via object-fit:contain) instead
+   of forcing a 16:9 crop, so no part of the map gets cut off/warped. */
 .map-hero{display:flex; flex-direction:column; align-items:center; gap:10px; margin-bottom:20px}
 .map-hero-frame{
-  width:100%; max-width:520px; aspect-ratio:16/9;
+  width:100%; max-width:720px; max-height:70vh;
   background:radial-gradient(circle at 50% 40%, #2a2119, #17130e);
   border:1px solid var(--line-soft); border-radius:12px; overflow:hidden;
   display:flex; align-items:center; justify-content:center;
 }
-.map-hero-frame img{width:100%; height:100%; object-fit:cover}
+.map-hero-frame img{width:100%; height:100%; max-height:70vh; object-fit:contain}
 .map-hero-name{
   font-family:'Cinzel', serif; font-size:15px; font-weight:600;
   color:var(--gold-bright); letter-spacing:.02em;
