@@ -310,6 +310,25 @@ KSR.app = (function(){
     return [...KSR.armor.allFlat(), ...KSR.weapon.allFlat(), ...KSR.skill.allFlat()];
   }
 
+  // Searching a map name or a monster name should surface the map/monster
+  // side of things too — not just items. byMapName = maps whose name
+  // matches; byMonsterInMap = individual monsters (in maps not already
+  // covered by byMapName) whose name matches.
+  function mapSearchMatches(ql){
+    if (!state.MAPS) return { byMapName: [], byMonsterInMap: [] };
+    const maps = KSR.mapmonster.mapList();
+    const byMapName = maps.filter(m => m.name.toLowerCase().includes(ql));
+    const coveredSlugs = new Set(byMapName.map(m => m.slug));
+    const byMonsterInMap = [];
+    maps.forEach(m => {
+      if (coveredSlugs.has(m.slug)) return;
+      m.monsters.forEach(mo => {
+        if (mo.name.toLowerCase().includes(ql)) byMonsterInMap.push({ map: m, monster: mo });
+      });
+    });
+    return { byMapName, byMonsterInMap };
+  }
+
   function runSearch(q){
     if (!FLAT_CACHE) FLAT_CACHE = allItemsFlat();
     const ql = q.toLowerCase();
@@ -319,11 +338,12 @@ KSR.app = (function(){
       !e.item.name.toLowerCase().includes(ql) &&
       e.item.monsters.some(m => m.toLowerCase().includes(ql))
     );
+    const { byMapName, byMonsterInMap } = mapSearchMatches(ql);
 
     const box = $('#searchResults');
     box.hidden = false;
 
-    if (!byName.length && !byMonster.length){
+    if (!byName.length && !byMonster.length && !byMapName.length && !byMonsterInMap.length){
       box.innerHTML = `<div class="sr-none">ไม่พบผลลัพธ์สำหรับ "${escapeHtml(q)}"</div>`;
       return;
     }
@@ -331,6 +351,8 @@ KSR.app = (function(){
     box.innerHTML = `
       ${byName.length ? searchGroup('ไอเทม', byName) : ''}
       ${byMonster.length ? searchGroup(`ดรอปจากมอนสเตอร์ "${escapeHtml(q)}"`, byMonster) : ''}
+      ${byMapName.length ? mapNameSearchGroup(byMapName) : ''}
+      ${byMonsterInMap.length ? monsterInMapSearchGroup(byMonsterInMap) : ''}
     `;
     $$('.sr-item', box).forEach(el => {
       el.addEventListener('click', () => {
@@ -343,6 +365,62 @@ KSR.app = (function(){
         navigate(routeFor(found.item, found.mode, found.group, found.cat));
       });
     });
+    // Monster results (both groups) carry data-monster — clicking them
+    // relies on KSR.shared's document-level delegated handler to actually
+    // open the monster popup (image + drop items + which map(s)); here we
+    // just tidy up the search box itself.
+    $$('.sr-mon, .sr-mon-single', box).forEach(el => {
+      el.addEventListener('click', () => {
+        $('#searchInput').value = '';
+        $('#searchClear').hidden = true;
+        hideSearch();
+      });
+    });
+  }
+
+  // Search matched a map's name: show every monster that lives in that
+  // map, each with its own picture, so the person can jump straight to
+  // whichever one dropped what they're after.
+  function mapNameSearchGroup(maps){
+    return `
+      <div class="sr-group">
+        <div class="sr-group-title">แผนที่</div>
+        ${maps.map(m => `
+          <div class="sr-map-block">
+            <div class="sr-map-title">🗺️ ${escapeHtml(m.name)} <span class="sr-map-count">(${m.monsters.length} มอนสเตอร์)</span></div>
+            <div class="sr-monster-row">
+              ${m.monsters.map(mo => `
+                <button type="button" class="sr-mon" data-monster="${escapeHtml(mo.name)}">
+                  ${mo.image ? `<img src="${mo.image}" alt loading="lazy">` : ''}
+                  <span>${escapeHtml(mo.name)}</span>
+                </button>
+              `).join('')}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  // Search matched a monster's name directly: list each one with its
+  // picture and which map it's found in.
+  function monsterInMapSearchGroup(entries){
+    return `
+      <div class="sr-group">
+        <div class="sr-group-title">มอนสเตอร์ในแผนที่</div>
+        <div class="sr-list">
+          ${entries.map(e => `
+            <div class="sr-mon-single" data-monster="${escapeHtml(e.monster.name)}">
+              ${e.monster.image ? `<img src="${e.monster.image}" alt loading="lazy">` : ''}
+              <div>
+                <div class="n">${escapeHtml(e.monster.name)}</div>
+                <div class="m">🗺️ ${escapeHtml(e.map.name)}</div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
   }
 
   function searchGroup(title, entries){

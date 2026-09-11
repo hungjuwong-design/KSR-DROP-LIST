@@ -3801,39 +3801,6 @@
           ]
         },
         {
-          "id": "helmets-sata-hat-2023-k-99",
-          "name": "Sata Hat 2023 (K)",
-          "set": 99,
-          "image": "img/helmets_936.png",
-          "monsters": [],
-          "stats": [
-            {
-              "plus": "0",
-              "defMin": "150",
-              "defMax": "190",
-              "cls": "Knight",
-              "levelReq": "20",
-              "str": "450",
-              "dex": "450",
-              "wis": "200",
-              "cha": "200",
-              "dur": "50"
-            },
-            {
-              "plus": "0",
-              "defMin": "288",
-              "defMax": "374",
-              "cls": "Knight",
-              "levelReq": "100",
-              "str": "1,200",
-              "dex": "1,200",
-              "wis": "500",
-              "cha": "500",
-              "dur": "50"
-            }
-          ]
-        },
-        {
           "id": "helmets-t-he-phantom-mask-99",
           "name": "[T]he Phantom Mask",
           "set": 99,
@@ -29080,39 +29047,6 @@
           ]
         },
         {
-          "id": "helmets-sata-hat-2023-s-99",
-          "name": "Sata Hat 2023 (S)",
-          "set": 99,
-          "image": "img/helmets_936.png",
-          "monsters": [],
-          "stats": [
-            {
-              "plus": "0",
-              "defMin": "110",
-              "defMax": "150",
-              "cls": "Sorcerer",
-              "levelReq": "20",
-              "str": "200",
-              "dex": "450",
-              "wis": "450",
-              "cha": "200",
-              "dur": "50"
-            },
-            {
-              "plus": "0",
-              "defMin": "204",
-              "defMax": "265",
-              "cls": "Sorcerer",
-              "levelReq": "100",
-              "str": "500",
-              "dex": "1,200",
-              "wis": "1,200",
-              "cha": "500",
-              "dur": "50"
-            }
-          ]
-        },
-        {
           "id": "helmets-treeshaped-helmet-99",
           "name": "Treeshaped Helmet",
           "set": 99,
@@ -54124,39 +54058,6 @@
           ]
         },
         {
-          "id": "helmets-sata-hat-2023-a-99",
-          "name": "Sata Hat 2023 (A)",
-          "set": 99,
-          "image": "img/helmets_936.png",
-          "monsters": [],
-          "stats": [
-            {
-              "plus": "0",
-              "defMin": "130",
-              "defMax": "170",
-              "cls": "Assassin",
-              "levelReq": "20",
-              "str": "450",
-              "dex": "450",
-              "wis": "200",
-              "cha": "200",
-              "dur": "50"
-            },
-            {
-              "plus": "0",
-              "defMin": "243",
-              "defMax": "315",
-              "cls": "Assassin",
-              "levelReq": "100",
-              "str": "1,200",
-              "dex": "1,200",
-              "wis": "500",
-              "cha": "500",
-              "dur": "50"
-            }
-          ]
-        },
-        {
           "id": "helmets-wc-headband-a-65535",
           "name": "WC Headband(A)",
           "set": 65535,
@@ -75816,39 +75717,6 @@
               "wis": "287",
               "cha": "126",
               "dur": "30"
-            }
-          ]
-        },
-        {
-          "id": "helmets-sata-hat-2023-m-99",
-          "name": "Sata Hat 2023 (M)",
-          "set": 99,
-          "image": "img/helmets_936.png",
-          "monsters": [],
-          "stats": [
-            {
-              "plus": "0",
-              "defMin": "125",
-              "defMax": "165",
-              "cls": "Micko",
-              "levelReq": "20",
-              "str": "200",
-              "dex": "450",
-              "wis": "450",
-              "cha": "200",
-              "dur": "50"
-            },
-            {
-              "plus": "0",
-              "defMin": "241",
-              "defMax": "313",
-              "cls": "Micko",
-              "levelReq": "100",
-              "str": "500",
-              "dex": "1,200",
-              "wis": "1,200",
-              "cha": "500",
-              "dur": "50"
             }
           ]
         },
@@ -101103,39 +100971,6 @@
           ]
         },
         {
-          "id": "helmets-sata-hat-2023-n-99",
-          "name": "Sata Hat 2023 (N)",
-          "set": 99,
-          "image": "img/helmets_936.png",
-          "monsters": [],
-          "stats": [
-            {
-              "plus": "0",
-              "defMin": "130",
-              "defMax": "170",
-              "cls": "Necromancer",
-              "levelReq": "20",
-              "str": "200",
-              "dex": "450",
-              "wis": "450",
-              "cha": "200",
-              "dur": "50"
-            },
-            {
-              "plus": "0",
-              "defMin": "243",
-              "defMax": "315",
-              "cls": "Necromancer",
-              "levelReq": "100",
-              "str": "500",
-              "dex": "1,200",
-              "wis": "1,200",
-              "cha": "500",
-              "dur": "50"
-            }
-          ]
-        },
-        {
           "id": "helmets-wc-headband-n-65535",
           "name": "WC Headband(N)",
           "set": 65535,
@@ -126107,39 +125942,6 @@
               "wis": "296",
               "cha": "126",
               "dur": "30"
-            }
-          ]
-        },
-        {
-          "id": "helmets-sata-hat-2023-c-99",
-          "name": "Sata Hat 2023 (C)",
-          "set": 99,
-          "image": "img/helmets_936.png",
-          "monsters": [],
-          "stats": [
-            {
-              "plus": "0",
-              "defMin": "125",
-              "defMax": "165",
-              "cls": "Cleric",
-              "levelReq": "20",
-              "str": "200",
-              "dex": "200",
-              "wis": "450",
-              "cha": "450",
-              "dur": "50"
-            },
-            {
-              "plus": "0",
-              "defMin": "241",
-              "defMax": "313",
-              "cls": "Cleric",
-              "levelReq": "100",
-              "str": "500",
-              "dex": "500",
-              "wis": "1,200",
-              "cha": "1,200",
-              "dur": "50"
             }
           ]
         },
