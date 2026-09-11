@@ -105,6 +105,32 @@ button{font-family:inherit; cursor:pointer; color:inherit}
 .sr-item .m{font-size:11px; color:var(--text-faint)}
 .sr-none{color:var(--text-faint); font-size:14px; padding:20px 0}
 
+.sr-map-block{
+  background:var(--bg-card); border:1px solid var(--line-soft); border-radius:8px;
+  padding:10px 12px; margin-bottom:8px;
+}
+.sr-map-title{
+  font-size:13px; font-weight:600; color:var(--gold); margin-bottom:8px;
+  display:flex; align-items:center; gap:6px;
+}
+.sr-map-count{font-size:11px; font-weight:400; color:var(--text-faint)}
+.sr-monster-row{display:flex; flex-wrap:wrap; gap:8px}
+.sr-mon{
+  display:flex; align-items:center; gap:6px; background:var(--bg-raised);
+  border:1px solid var(--line-soft); border-radius:20px; padding:4px 10px 4px 4px;
+  font-size:12px; color:var(--text); font-family:inherit;
+}
+.sr-mon:hover{border-color:var(--gold)}
+.sr-mon img{width:24px; height:24px; object-fit:contain; border-radius:50%; flex-shrink:0}
+.sr-mon-single{
+  display:flex; align-items:center; gap:10px; background:var(--bg-card);
+  border:1px solid var(--line-soft); border-radius:8px; padding:8px 10px; cursor:pointer;
+}
+.sr-mon-single:hover{border-color:var(--gold)}
+.sr-mon-single img{width:32px; height:32px; object-fit:contain; flex-shrink:0}
+.sr-mon-single .n{font-size:13px; font-weight:600}
+.sr-mon-single .m{font-size:11px; color:var(--text-faint)}
+
 /* ---------- Layout ---------- */
 .layout{
   max-width:1280px; margin:0 auto; padding:20px;
